@@ -9,15 +9,19 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/michaelayoub/acdp-ace-extractors</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Description>ACDP Enrichment Dataset Builde - Portal.DAT Tablesr</Description>
+    <Description>ACDP Enrichment Dataset Builder - Portal.DAT Tables</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\vendor\ACE.DatLoader/ACE.DatLoader.csproj" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.11" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.11" />
+    <PackageReference Include="Google.Protobuf" Version="3.24.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\vendor\ACE.DatLoader/ACE.DatLoader.csproj" />
   </ItemGroup>
 
 </Project>

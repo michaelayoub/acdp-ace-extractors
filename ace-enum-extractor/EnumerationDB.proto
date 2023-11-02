@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message EnumerationValue {
+    string label = 1;
+    int64 value = 2;
+    string extension = 3;
+}
+
+message Enumeration {
+    string name = 1;
+    repeated EnumerationValue values = 2;
+}
+
+message EnumerationDB {
+    string gitHash = 1;
+    repeated Enumeration enums = 2;
+}

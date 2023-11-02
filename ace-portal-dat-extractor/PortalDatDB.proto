@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+message Skill {
+    uint32 id = 1;
+    uint32 attr1 = 2;
+    uint32 attr2 = 3;
+    uint32 divisor = 4;
+    string description = 5;
+    string name = 6;
+    uint32 iconId = 7;
+}
+
+message XpListElementInt {
+    int32 level = 1;
+    uint32 cost = 2;
+}
+
+message XpListElementLong {
+    int32 level = 1;
+    uint64 cost = 2;
+}
+
+message Contract {
+    uint32 id = 1;
+    uint32 version = 2;
+    string name = 3;
+    string description = 4;
+    string description_progress = 5;
+    string name_npc_start = 6;
+    string name_npc_end = 7;
+    string questflag_stamped = 8;
+    string questflag_started = 9;
+    string questflag_finished = 10;
+    string questflag_progress = 11;
+    string questflag_timer = 12;
+    string questflag_repeat_time = 13;
+    string location_npc_start = 14;
+    string location_npc_end = 15;
+    string location_quest_area = 16;
+}
+
+message SecondaryAttribute {
+    uint32 health_attribute_type = 1;
+    uint32 health_attribute_divisor = 2;
+    uint32 stamina_attribute_type = 3;
+    uint32 stamina_attribute_divisor = 4;
+    uint32 mana_attribute_type = 5;
+    uint32 mana_attribute_divisor = 6;
+}
+
+message PortalDatDB {
+    repeated XpListElementInt attributeXp = 1;
+    repeated XpListElementInt vitalXp = 2;
+    repeated XpListElementInt trainedSkillXp = 3;
+    repeated XpListElementInt specializedSkillXp = 4;
+    repeated XpListElementLong characterLevelXp = 5;
+    repeated Skill skills = 6;
+    repeated Contract contracts = 7;
+    SecondaryAttribute secondaryAttributes = 8;
+}
