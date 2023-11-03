@@ -108,6 +108,7 @@ static class EnumExtension
         { "WieldRequirements4" , "WieldRequirement" },
         { "ArmorType" , "ArmorType" },
         { "ShowableOnRadar" , "RadarBehavior" },
-        { "ChannelsActive" , "Channel" }
+        { "ChannelsActive" , "Channel" },
+        { "CharacterTitleId", "CharacterTitle" }
     };
 }

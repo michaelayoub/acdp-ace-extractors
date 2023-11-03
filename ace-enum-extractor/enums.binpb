@@ -45361,7 +45361,7 @@ HouseOwner 
 PetOwner,
 	PetDevice-
 PCAPRecordedObjectIID¿>
-PCAPRecordedParentIID»>˜R
+PCAPRecordedParentIID»>áS
 PropertyInt
 Undef
 ItemTypeItemType
@@ -45643,8 +45643,8 @@ $AugmentationSpecializeArmorTinkering‚-
 ItemAttributeLimitÅ
 ItemAttributeLevelLimitÇ
 ItemAttribute2ndLimitÉ
-ItemAttribute2ndLevelLimitÑ
-CharacterTitleIdÖ
+ItemAttribute2ndLevelLimitÑ%
+CharacterTitleIdÖCharacterTitle
 NumCharacterTitlesÜ'
 ResistanceModifierTypeá
 DamageType
